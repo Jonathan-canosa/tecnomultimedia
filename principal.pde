@@ -75,11 +75,6 @@ class principal {
         estado=5;
       }
     }
-    for (int i=0; i<villanoc.length; i++) {
-      if (villanoc[i].y>height) {
-        villanoc[i].y= random(-100);
-      }
-    }
     p.dibujarPersonaje();
     contador();
     if (contador==30) {
@@ -141,7 +136,6 @@ class principal {
     for (int i = 0; i < 8; i++) {
       this.villanoc[i] = new Villano();
     }
-
     contadorTiempo = 30;
     tiempoComienzo= millis()/1000 + contadorTiempo;
     l = new lore();
